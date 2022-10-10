@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Blog-DBChain-WEB</title>
+		<link href="img/bloglogo.png" rel="shortcut icon" type="image/x-icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+		<style type="text/css">
+			.cred{
+				border:1px red solid;
+			}
+			
+			input.phone:focus, input.code:focus {
+				outline: none;
+				box-shadow:none;
+			}
+			
+			body, .login-input{
+				background: #F8F8F8;
+			}
+			#file{
+				opacity: 0;
+				width: 90px;
+				height: 90px;
+				border-radius: 50%!important;
+				position: absolute;
+				left: 10.6em;
+				cursor: pointer;
+			}
+				
+			#preview{
+				background-color: #DADADA;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-3">
+					<a href="<%= root_path %>" target="_self" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+						<img src="img/bloglogo.png" width="200">
+					</a>
+					<form class="col-6 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+					</form>
+					<div class="dropdown text-end">
+							<a href="#" target="_self" class="d-block link-dark text-decoration-none" id="dropdownUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<span class="fw-bold me-2">dubian</span><img src="./img/logotest.jpg" alt="mdo" width="44" height="44" class="rounded-circle">
+							</a>
+							<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser">
+								<li>啊哈</li>
+								<li><hr class="dropdown-divider"></li>
+								<li>Log out</li>
+							</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="login">
+			<div class="container">
+				<div class="nav align-items-center text-center flex-column justify-content-center">
+					<div class="col-sm-6 col-lg-4">
+						
+						<form action="" method="post" class="form form-control border-0 pt-5 pb-4 px-4 shadow-sm" style="border-radius: 1em;">
+							
+							
+							<div class="mb-5 position-relative text-center">
+								<img src="img/file.png" width="90" height="90" class="rounded-circle" id="preview" alt="avatar" title="avatar" >
+								<input type="file" accept="image/*" name="file" id="file" required />
+							</div>
+							
+							<div class="input-group mb-3">
+							  <span class="input-group-text border-0" id="basic-addon1">昵称</span>
+							  <input type="text" class="form-control form-control-lg phone login-input border-0" placeholder="博客" aria-label="phone" aria-describedby="basic-addon1">
+							</div>
+							
+							<div class="input-group mb-3">
+							  <span class="input-group-text border-0" id="basic-addon1">性别</span>
+							  <input type="text" class="form-control form-control-lg phone login-input border-0" placeholder="男/女" aria-label="phone" aria-describedby="basic-addon1">
+							</div>
+							
+							<div class="input-group mb-3">
+							  <span class="input-group-text border-0" id="basic-addon1">年龄</span>
+							  <input type="text" class="form-control form-control-lg phone login-input border-0" placeholder="0" aria-label="phone" aria-describedby="basic-addon1">
+							</div>
+							
+							<div class="input-group mb-3">
+							  <span class="input-group-text border-0" id="basic-addon1">简介</span>
+								<textarea rows="" cols="" class="form-control form-control-lg phone login-input border-0" placeholder="区块链博客真棒" ></textarea>
+							</div>
+							
+							
+							<div class="pt-4 pb-3 text-center" >
+							  <input type="submit" class="btn  btn-primary shadow px-5 py-3 rounded-pill" value="更新" />
+							</div>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	</body>
+</html>
